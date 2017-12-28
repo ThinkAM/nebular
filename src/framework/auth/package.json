@@ -1,20 +1,20 @@
 {
-  "name": "@nebular/auth",
-  "version": "2.0.0-rc.3",
-  "description": "@nebular/auth",
+  "name": "@nebular-thinkam.net/auth",
+  "version": "2.0.0-rc.4",
+  "description": "@nebular-thinkam.net/auth",
   "main": "./bundles/auth.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
-  "author": "akveo",
+  "author": "Think A.M. Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/nebular.git"
+    "url": "git+https://github.com/ThinkAM/nebular.git"
   },
   "bugs": {
-    "url": "https://github.com/akveo/nebular/issues"
+    "url": "https://github.com/ThinkAM/nebular/issues"
   },
-  "homepage": "https://github.com/akveo/nebular#readme",
+  "homepage": "https://github.com/ThinkAM/nebular#readme",
   "keywords": [
     "angular",
     "typescript",
