@@ -1,13 +1,13 @@
 {
-  "name": "nebular",
+  "name": "nebular-thinkam.net",
   "version": "2.0.0-rc.3",
   "license": "MIT",
-  "author": "akveo <contact@akveo.com>",
+  "author": "Think A.M. Team <contato@thinkam.net>",
   "bugs": {
-    "url": "https://github.com/akveo/nebular/issues"
+    "url": "https://github.com/ThinkAM/nebular/issues"
   },
-  "homepage": "https://github.com/akveo/nebular#readme",
-  "repository": "git+https://github.com/akveo/nebular.git",
+  "homepage": "https://github.com/ThinkAM/nebular#readme",
+  "repository": "git+https://github.com/ThinkAM/nebular.git",
   "scripts": {
     "ng": "ng",
     "ngh": "ngh",
