@@ -1,6 +1,6 @@
 {
   "name": "nebular-thinkam.net-theme",
-  "version": "2.0.0-rc.5",
+  "version": "2.0.0-rc.7",
   "description": "@nebular-thinkam.net/theme",
   "main": "./bundles/theme.umd.js",
   "module": "./index.js",

@@ -1,6 +1,6 @@
 {
   "name": "nebular-thinkam.net-auth",
-  "version": "2.0.0-rc.5",
+  "version": "2.0.0-rc.7",
   "description": "nebular-thinkam.net-auth",
   "main": "./bundles/auth.umd.js",
   "module": "./index.js",
@@ -29,6 +29,6 @@
     "@angular/router": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
-    "@nebular/theme": "2.0.0-rc.3"
+    "nebular-thinkam.net-theme": "2.0.0-rc.7"
   }
 }
