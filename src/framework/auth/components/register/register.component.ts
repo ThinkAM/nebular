@@ -15,7 +15,7 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
   styleUrls: ['./register.component.scss'],
   template: `
     <nb-auth-block>
-      <h2 class="title">Sign Up</h2>
+      <h2 class="title">Cadastro de Usuário</h2>
       <form (ngSubmit)="register()" #form="ngForm">
 
         <div *ngIf="showMessages.error && errors && errors.length > 0 && !submitted"
@@ -30,16 +30,16 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
         </div>
 
         <div class="form-group">
-          <label for="input-name" class="sr-only">Full name</label>
+          <label for="input-name" class="sr-only">Nome</label>
           <input name="fullName" [(ngModel)]="user.fullName" id="input-name" #fullName="ngModel"
-                 class="form-control" placeholder="Full name"
+                 class="form-control" placeholder="Informe seu Nome"
                  [class.form-control-danger]="fullName.invalid && fullName.touched"
                  [required]="getConfigValue('forms.validation.fullName.required')"
                  [minlength]="getConfigValue('forms.validation.fullName.minLength')"
                  [maxlength]="getConfigValue('forms.validation.fullName.maxLength')"
                  autofocus>
           <small class="form-text error" *ngIf="fullName.invalid && fullName.touched && fullName.errors?.required">
-            Full name is required!
+            Nome é obrigatório!
           </small>
           <small
             class="form-text error"
@@ -52,13 +52,13 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
         </div>
 
         <div class="form-group">
-          <label for="input-email" class="sr-only">Email address</label>
+          <label for="input-email" class="sr-only">Endereço de E-mail</label>
           <input name="email" [(ngModel)]="user.email" id="input-email" #email="ngModel"
-                 class="form-control" placeholder="Email address" pattern=".+@.+\..+"
+                 class="form-control" placeholder="Informe o seu Endereço de E-mail" pattern=".+@.+\..+"
                  [class.form-control-danger]="email.invalid && email.touched"
                  [required]="getConfigValue('forms.validation.email.required')">
           <small class="form-text error" *ngIf="email.invalid && email.touched && email.errors?.required">
-            Email is required!
+            E-mail é obrigatório!
           </small>
           <small class="form-text error"
                  *ngIf="email.invalid && email.touched && email.errors?.pattern">
@@ -67,15 +67,15 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
         </div>
 
         <div class="form-group">
-          <label for="input-password" class="sr-only">Password</label>
+          <label for="input-password" class="sr-only">Senha</label>
           <input name="password" [(ngModel)]="user.password" type="password" id="input-password"
-                 class="form-control" placeholder="Password" #password="ngModel"
+                 class="form-control" placeholder="Informe a sua Senha" #password="ngModel"
                  [class.form-control-danger]="password.invalid && password.touched"
                  [required]="getConfigValue('forms.validation.password.required')"
                  [minlength]="getConfigValue('forms.validation.password.minLength')"
                  [maxlength]="getConfigValue('forms.validation.password.maxLength')">
           <small class="form-text error" *ngIf="password.invalid && password.touched && password.errors?.required">
-            Password is required!
+            Senha é obrigatória!
           </small>
           <small
             class="form-text error"
@@ -88,15 +88,15 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
         </div>
 
         <div class="form-group">
-          <label for="input-re-password" class="sr-only">Repeat password</label>
+          <label for="input-re-password" class="sr-only">Confirmação de Senha</label>
           <input
             name="rePass" [(ngModel)]="user.confirmPassword" type="password" id="input-re-password"
-            class="form-control" placeholder="Confirm Password" #rePass="ngModel"
+            class="form-control" placeholder="Confirme a sua Senha" #rePass="ngModel"
             [class.form-control-danger]="(rePass.invalid || password.value != rePass.value) && rePass.touched"
             [required]="getConfigValue('forms.validation.password.required')">
           <small class="form-text error"
                  *ngIf="rePass.invalid && rePass.touched && rePass.errors?.required">
-            Password confirmation is required!
+            Confirmação de Senha é Obrigatória!
           </small>
           <small
             class="form-text error"
@@ -107,19 +107,19 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
 
         <div class="form-group accept-group col-sm-12" *ngIf="getConfigValue('forms.register.terms')">
           <nb-checkbox name="terms" [(ngModel)]="user.terms" [required]="getConfigValue('forms.register.terms')">
-            Agree to <a href="#" target="_blank"><strong>Terms & Conditions</strong></a>
+            Aceito os <a href="#" target="_blank"><strong>Termos & Condições</strong></a>
           </nb-checkbox>
         </div>
 
         <button [disabled]="submitted || !form.valid" class="btn btn-block btn-hero-success"
                 [class.btn-pulse]="submitted">
-          Register
+          Enviar
         </button>
       </form>
 
       <div class="links">
         <small class="form-text">
-          Already have an account? <a routerLink="../login"><strong>Sign in</strong></a>
+          Já tem uma conta Think A.M.? <a routerLink="../login"><strong>Entre</strong></a>
         </small>
       </div>
     </nb-auth-block>
