@@ -1,7 +1,7 @@
 {
-  "name": "@nebular-thinkam.net/auth",
-  "version": "2.0.0-rc.4",
-  "description": "@nebular-thinkam.net/auth",
+  "name": "nebular-thinkam.net-auth",
+  "version": "2.0.0-rc.5",
+  "description": "nebular-thinkam.net-auth",
   "main": "./bundles/auth.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",

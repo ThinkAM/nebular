@@ -1,16 +1,13 @@
 {
-  "name": "@nebular-thinkam.net/theme",
-  "version": "2.0.0-rc.4",
+  "name": "nebular-thinkam.net-theme",
+  "version": "2.0.0-rc.5",
   "description": "@nebular-thinkam.net/theme",
   "main": "./bundles/theme.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
   "author": "Think A.M. Team",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThinkAM/nebular.git"
-  },
+  "repository": "git+https://github.com/ThinkAM/theme.git",
   "bugs": {
     "url": "https://github.com/ThinkAM/nebular/issues"
   },
