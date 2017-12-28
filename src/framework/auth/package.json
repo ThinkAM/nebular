@@ -7,10 +7,7 @@
   "typings": "./index.d.ts",
   "author": "Think A.M. Team",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThinkAM/nebular.git"
-  },
+  "repository": "git+https://github.com/ThinkAM/auth.git",
   "bugs": {
     "url": "https://github.com/ThinkAM/nebular/issues"
   },
