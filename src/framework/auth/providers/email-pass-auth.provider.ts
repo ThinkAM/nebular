@@ -41,7 +41,7 @@ import { getDeepFromObject } from '../helpers';
  *  register: {
  *    alwaysFail: false,
  *    rememberMe: true,
- *    endpoint: '/api/auth/register',
+ *    endpoint: '/api/user',
  *    method: 'post',
  *    redirect: {
  *      success: '/',
@@ -127,14 +127,14 @@ export class NbEmailPassAuthProvider extends NbAbstractAuthProvider {
     register: {
       alwaysFail: false,
       rememberMe: true,
-      endpoint: '/api/auth/register',
+      endpoint: '/api/user',
       method: 'post',
       redirect: {
         success: '/',
         failure: null,
       },
-      defaultErrors: ['Something went wrong, please try again.'],
-      defaultMessages: ['You have been successfully registered.'],
+      defaultErrors: ['Alguma coisa deu errado. Por favor tente outra vez.'],
+      defaultMessages: ['Você foi registrado com sucesso.'],
     },
     logout: {
       alwaysFail: false,

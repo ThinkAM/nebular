@@ -150,7 +150,7 @@ const NB_TEST_COMPONENTS = [
               endpoint: 'http://localhost:4400/api/auth/login',
             },
             register: {
-              endpoint: 'http://localhost:4400/api/auth/register',
+              endpoint: 'http://thinkam.azurewebsites.net/api/user',
             },
             logout: {
               endpoint: 'http://localhost:4400/api/auth/logout',

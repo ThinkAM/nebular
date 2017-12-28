@@ -31,23 +31,23 @@ import { NbAuthResult, NbAuthService } from '../../services/auth.service';
 
         <div class="form-group">
           <label for="input-name" class="sr-only">Nome</label>
-          <input name="fullName" [(ngModel)]="user.fullName" id="input-name" #fullName="ngModel"
+          <input name="name" [(ngModel)]="user.name" id="input-name" #name="ngModel"
                  class="form-control" placeholder="Informe seu Nome"
-                 [class.form-control-danger]="fullName.invalid && fullName.touched"
-                 [required]="getConfigValue('forms.validation.fullName.required')"
-                 [minlength]="getConfigValue('forms.validation.fullName.minLength')"
-                 [maxlength]="getConfigValue('forms.validation.fullName.maxLength')"
+                 [class.form-control-danger]="name.invalid && name.touched"
+                 [required]="getConfigValue('forms.validation.name.required')"
+                 [minlength]="getConfigValue('forms.validation.name.minLength')"
+                 [maxlength]="getConfigValue('forms.validation.name.maxLength')"
                  autofocus>
-          <small class="form-text error" *ngIf="fullName.invalid && fullName.touched && fullName.errors?.required">
+          <small class="form-text error" *ngIf="name.invalid && name.touched && name.errors?.required">
             Nome é obrigatório!
           </small>
           <small
             class="form-text error"
-            *ngIf="fullName.invalid && fullName.touched && (fullName.errors?.minlength || fullName.errors?.maxlength)">
-            Full name should contains
-            from {{getConfigValue('forms.validation.password.minLength')}}
-            to {{getConfigValue('forms.validation.password.maxLength')}}
-            characters
+            *ngIf="name.invalid && name.touched && (name.errors?.minlength || name.errors?.maxlength)">
+            O nome completo deve conter
+            a partir de {{getConfigValue('forms.validation.password.minLength')}}
+            até {{getConfigValue('forms.validation.password.maxLength')}}
+            caracteres
           </small>
         </div>
 

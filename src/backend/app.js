@@ -63,7 +63,7 @@ app.post('/api/auth/login', function (req, res) {
   });
 });
 
-app.post('/api/auth/register', function (req, res) {
+app.post('/api/user', function (req, res) {
 
   if (req.body.email && req.body.password && req.body.password === req.body.confirmPassword) {
     var user = {

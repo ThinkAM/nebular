@@ -51,7 +51,7 @@ Now, let's add API endpoints. According to the [NbEmailPassAuthProvider document
  },
  register: {
    ...
-   endpoint: '/api/auth/register',
+   endpoint: '/api/user',
    ...
  },
 ```

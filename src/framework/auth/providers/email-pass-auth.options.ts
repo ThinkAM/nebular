@@ -54,7 +54,7 @@ export interface NgEmailPassAuthProviderConfig {
       required?: boolean;
       regexp?: string | null;
     };
-    fullName?: {
+    name?: {
       required?: boolean;
       minLength?: number | null;
       maxLength?: number | null;
